@@ -4,7 +4,8 @@ import React from "react";
 import Complaint from "./components/complaint";
 
 const ComplaintPage: React.FC = () => {
-  return <Complaint />;
+  return <>
+  </>;
 };
 
 export default ComplaintPage;

@@ -1,24 +1,24 @@
-import Image from "next/image"; // Pastikan impor ini benar
-import logo from "../../public/images/bkmoklet.png"; // Pastikan path ini benar
+import Image from "next/image"; // Pastikan impor ini benar 
+import logo from "../../public/images/logo_bk.svg"
 
 export default function Header() {
     return (
-        <header className="flex justify-between items-start px-6 mb-5">
+        <header className="flex justify-center items-start px-6 mb-5">
+            <div className="flex justify-center">
             {/* Logo */}
             <div className="flex items-start ml-auto"> {/* Geser logo ke kanan */}
                 <Image
                     src={logo}
                     alt="Logo BKMoklet"
-                    width={50} // Sesuaikan lebar
-                    height={50} // Sesuaikan tinggi
-                    className="w-24 h-auto"
-                    priority
+                    width={500}
+                    height={500}
+                    className="w-full h-full"
                 />
             </div>
 
             {/* Navigation */}
-            <nav className="flex justify-center w-full">
-                <ul className="flex space-x-20 text-gray-700 font-medium pl-20">
+            <nav className="w-full">
+                <ul className="flex items-center space-x-20 text-gray-700 font-medium py-4 pl-11">
                     <li>
                         <a href="/" className="hover:text-red-500 transition-colors duration-300">
                             Home
@@ -61,6 +61,7 @@ export default function Header() {
                     </li>
                 </ul>
             </nav>
+            </div>
         </header>
     );
 }
