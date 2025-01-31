@@ -10,18 +10,17 @@ export default function Main() {
                         src={smk}
                         alt="foto smk telkom malang"
                         className="w-full object-cover" />
-                    <div className="bg-black w-full h-full opacity-25 absolute top-0">{""}</div>
+                    <div className="bg-gradient-to-t from-black to-black/15 w-full h-full absolute top-0">{""}</div>
                 </div>
             </div>
             <div className="flex justify-start py-28 px-40">
-                <div className="w-1/2">
-                    <div className="text-3xl font-semibold">
-                        <h1>Reclaim Your Happiness and Balance: “BK-Moco.com” 's Online Counseling for
-                            Positive Learning</h1>
-                        <p>You're not alone on this journey. Our compassionate counselors are here to guide you.</p>
-                        <div>
-                            <button>Start Your Healing Journey Toda</button>
-                            <button>Schedule Your Counseling Session</button>
+                <div className="w-2/3">
+                    <div className="font-bold text-4xl text-wrap">
+                        <h1>Reclaim Your Happiness and Balance: “BK-Moco.com” 's Online Counseling for <br /> Positive Learning</h1>
+                        <p className="font-normal text-lg py-4">You're not alone on this journey. Our compassionate counselors are here to guide you.</p>
+                        <div className="text-base font-normal flex justify-start items-center space-x-8">
+                            <button className="text-white font-normal bg-primary px-4 py-2 rounded-md">Start Your Healing Journey Toda</button>
+                            <button className="text-white bg-transparent px-4 py-2 rounded-md font-norma border-2 border-white">Schedule Your Counseling Session</button>
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/header";
 import Main from "./components/main";
+import Discusion from "./components/dicusion";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,6 +20,7 @@ export default function RootLayout({
         style={{ backgroundColor: "white" }}>
         <Header />
         <Main/>
+        <Discusion/>
         {children}
       </body>
     </html>

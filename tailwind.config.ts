@@ -11,6 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary : "#B7292E"
       },
       fontFamily: {
         roboto: ["Roboto", "serif"]
