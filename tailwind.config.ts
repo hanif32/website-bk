@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary : "#B7292E",
+        secondary: "#E4262C",
         gray: "rgba(69, 69, 69, 1)"
       },
       borderWidth: {
