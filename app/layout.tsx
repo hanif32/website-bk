@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/header";
 import Main from "./components/main";
 import Discusion from "./components/dicusion";
+import About from "./components/about";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,10 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        style={{ backgroundColor: "white" }}>
+        style={{ backgroundColor: "white", }}>
         <Header />
         <Main/>
         <Discusion/>
+        <About/>
         {children}
       </body>
     </html>

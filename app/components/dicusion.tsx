@@ -32,7 +32,7 @@ const data: item[] = [
 export default function Discusion() {
     return (
         <>
-            <div className="py-40">
+            <div className="pt-36">
                 <div className="flex justify-center items-center w-full">
                     <div className="flex justify-between items-center bg-white p-8 border rounded-md shadow-md space-x-4 w-4/5">
                         <div className="text-black space-y-2">
@@ -51,7 +51,7 @@ export default function Discusion() {
                             data.map(({ id, text, nomor, desc, }: item) => {
                                 return (
                                     <div key={id}>
-                                        <div className="text-black bg-white py-12 px-8 shadow-lg border rounded-md space-x-40 flex justify-center items-center">
+                                        <div className="text-black bg-white py-12 px-8 shadow-lg rounded-md space-x-40 flex justify-center items-center">
                                             <h1 className="font-semibold text-2xl uppercase">{text}</h1>
                                             <div className="text-left">
                                                 <h1 className="font-medium text-4xl">{nomor}</h1>

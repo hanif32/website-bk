@@ -18,7 +18,7 @@ export default function Header() {
 
             {/* Navigation */}
             <nav className="w-full">
-                <ul className="flex items-center space-x-20 text-gray-700 font-medium py-4 pl-11">
+                <ul className="flex items-center space-x-20 text-gray-700 font-medium py-4 pl-11 text-black">
                     <li>
                         <a href="/" className="hover:text-red-500 transition-colors duration-300">
                             Home
