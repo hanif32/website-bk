@@ -5,6 +5,7 @@ import Main from "./components/main";
 import Discusion from "./components/dicusion";
 import About from "./components/about";
 import Services from "./components/services";
+import Team from "./components/team";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Discusion/>
         <About/>
         <Services/>
+        <Team/>
         {children}
       </body>
     </html>

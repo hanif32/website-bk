@@ -10,7 +10,7 @@ export default function Main() {
                         src={smk}
                         alt="foto smk telkom malang"
                         className="w-full object-cover" />
-                    <div className="bg-gradient-to-t from-black to-black/15 w-full h-full absolute top-0">{""}</div>
+                    <div className="bg-gradient-to-t from-black to-black/15 w-full h-[640px] absolute top-0">{""}</div>
                 </div>
             </div>
             <div className="flex justify-start py-28 px-40">

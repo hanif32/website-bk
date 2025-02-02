@@ -32,7 +32,7 @@ const data: item[] = [
 export default function Discusion() {
     return (
         <>
-            <div className="pt-36">
+            <div className="pt-48">
                 <div className="flex justify-center items-center w-full">
                     <div className="flex justify-between items-center bg-white p-8 border rounded-md shadow-md space-x-4 w-4/5">
                         <div className="text-black space-y-2">
