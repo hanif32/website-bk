@@ -21,12 +21,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         style={{ backgroundColor: "white", }}>
-        <Header />
-        <Main/>
-        <Discusion/>
-        <About/>
-        <Services/>
-        <Team/>
+        <div className="container">
+          <Header />
+          <Main />
+          <Discusion />
+          <About />
+          <Services />
+          <Team />
+        </div>
         {children}
       </body>
     </html>

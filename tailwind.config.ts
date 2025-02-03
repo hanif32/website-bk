@@ -18,6 +18,9 @@ export default {
       borderWidth: {
         1: "1px"
       },
+      container: {
+        center: true,
+      },
       fontFamily: {
         roboto: ["Roboto", "serif"]
       },

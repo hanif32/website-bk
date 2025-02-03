@@ -4,6 +4,7 @@ import pak_emil from "@/public/images/team/Pak_Emil.png"
 import bu_nia from "@/public/images/team/Bu_Nia.png"
 import bu_mis from "@/public/images/team/Bu_Mis.png"
 import bu_kheren from "@/public/images/team/Bu_Kheren.png"
+import { FaArrowRightLong } from "react-icons/fa6"
 
 
 interface data {
@@ -73,6 +74,13 @@ export default function Team() {
                             )
                         })
                     }
+                </div>
+                <div className="px-36">
+                    <div className="flex justify-center text-white items-center bg-primary space-x-4 p-3 w-[206px] rounded-lg">
+                        <button className="font-normal text-base">Meet All Counsellor</button>
+                        <FaArrowRightLong className="text-white "/>
+                    </div>
+                    <div className="py-8 border-b-2 border-primary w-full h-[3px]">{""}</div>
                 </div>
             </div >
         </>

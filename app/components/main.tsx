@@ -3,14 +3,14 @@ import smk from "../../public/images/sekolah.png"
 
 export default function Main() {
     return (
-        <div className="w-full h-full font-roboto">
-            <div className="w-full absolute top-14 -z-10">
-                <div className="relative">
-                    <Image
-                        src={smk}
-                        alt="foto smk telkom malang"
-                        className="w-full object-cover" />
-                    <div className="bg-gradient-to-t from-black to-black/15 w-full h-[640px] absolute top-0">{""}</div>
+        <div className="w-full font-roboto">
+            <div className="absolute top-14 -z-10">
+                <div>
+                <Image
+                    src={smk}
+                    alt="foto smk telkom malang"
+                    className="w-full object-cover" />
+                <div className="bg-gradient-to-t from-black to-black/15 w-full h-[640px] absolute top-0">{""}</div>
                 </div>
             </div>
             <div className="flex justify-start py-28 px-40">
