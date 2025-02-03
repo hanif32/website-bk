@@ -11,7 +11,22 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary : "#B7292E",
+        secondary: "#E4262C",
+        gray: "rgba(69, 69, 69, 1)"
       },
+      borderWidth: {
+        1: "1px"
+      },
+      container: {
+        center: true,
+      },
+      fontFamily: {
+        roboto: ["Roboto", "serif"]
+      },
+      backgroundColor: {
+        abu: "rgba(136, 137, 136, 0.2)"
+      }
     },
   },
   plugins: [],
