@@ -45,7 +45,7 @@ const team: data[] = [
 export default function Team() {
     return (
         <>
-            <div className="pt-24 font-roboto h-[3000px]">
+            <div className="pt-24 font-roboto">
                 <div className="flex justify-start items-center px-36 ">
                     <div className="space-y-2">
                         <h2 className="font-normal text-xl text-primary">Our Team</h2>
@@ -78,10 +78,10 @@ export default function Team() {
                 <div className="px-36 pb-12">
                     <div className="flex justify-center text-white items-center bg-primary space-x-4 p-3 w-[206px] rounded-lg">
                         <button className="font-normal text-base">Meet All Counsellor</button>
-                        <FaArrowRightLong className="text-white "/>
+                        <FaArrowRightLong className="text-white " />
                     </div>
                 </div>
-                <div className="border-b-2 border-black/20 w-full -rotate-180 py-8">{''}</div>
+                <div className="border-b-2 border-black/20 w-full -rotate-180 py-7">{''}</div>
             </div >
         </>
     )
