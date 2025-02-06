@@ -7,6 +7,7 @@ import About from "./components/about";
 import Services from "./components/services";
 import Team from "./components/team";
 import Power from "./components/power";
+import Testimonials from "./components/testimonial";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -30,6 +31,7 @@ export default function RootLayout({
           <Services />
           <Team />
           <Power/>
+          <Testimonials/>
         </div>
         {children}
       </body>
