@@ -51,7 +51,7 @@ export default function Discusion() {
                             data.map(({ id, text, nomor, desc, }: item) => {
                                 return (
                                     <div key={id}>
-                                        <div className="text-black bg-white py-12 px-8 shadow-lg rounded-md space-x-40 flex justify-center items-center">
+                                        <div className="text-black border-1 border-slate-200 bg-white py-12 px-8 shadow-lg rounded-md space-x-40 flex justify-center items-center">
                                             <h1 className="font-semibold text-2xl uppercase">{text}</h1>
                                             <div className="text-left">
                                                 <h1 className="font-medium text-4xl">{nomor}</h1>
