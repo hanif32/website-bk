@@ -5,12 +5,12 @@ export default function Main() {
     return (
         <div className="w-full font-roboto">
             <div className="absolute top-14 -z-10">
-                <div>
+                <div className="relative">
                 <Image
                     src={smk}
                     alt="foto smk telkom malang"
-                    className="w-full object-cover" />
-                <div className="bg-gradient-to-t from-black to-black/15 w-full h-[640px] absolute top-0">{""}</div>
+                    className="w-full object-cover h-[640px]"/>
+                    <div className="bg-gradient-to-t from-black to-black/15 top-0 absolute w-full h-[640px]">{""}</div>
                 </div>
             </div>
             <div className="flex justify-start py-28 px-40">
