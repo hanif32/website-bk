@@ -69,13 +69,13 @@ export function News() {
                         <h1 className='font-normal uppercase text-xl text-primary'>News & Press Release</h1>
                         <h1 className='font-semibold text-black text-3xl leading-7'>Berita Terakhir</h1>
                     </div>
-                    <div className="flex justify-center text-white items-center bg-primary space-x-4 p-3 w-[206px] rounded-lg">
+                    <div className="flex justify-center text-white items-center bg-primary space-x-4 py-2 w-[206px] rounded-lg">
                         <button className="font-normal text-base">See All Blog</button>
                         <FaArrowRightLong className="text-white " />
                     </div>
                 </div>
-                <div>
-                    <div className='flex items-center gap-x-8'>
+                <div className='flex items-start gap-x-[100px]'>
+                    <div className='flex items-center gap-x-10'>
                         {
                             itemData.map(({ id, img, sub, title, date, desc }: item) => {
                                 return (
@@ -92,23 +92,27 @@ export function News() {
                             })
                         }
                     </div>
-                    <div>
-                        {/* {
-                    blogData.map(({ id, title, date, sub }: blog) => {
-                        return (
-                            <div key={id}>
-                                <h1>{title }</h1>
-                                <div>
-                                    <p>{date}</p>
-                                    <p>{sub}</p>
-                                </div>
-                            </div>
-                        )
-                    })
-                } */}
+                    <div className='border border-gray/25 rounded-md max-h-[400px]'>
+                        {
+                            blogData.map(({ id, title, date, sub }: blog) => {
+                                return (
+                                    <div key={id} className='text-black border-b-gray/25 border-b-1 max-w-[400px] space-y-1 py-3 px-6'>
+                                        <h1 className='font-semibold text-2xl'>{title}</h1>
+                                        <div className='flex items-center justify-start space-x-2'>
+                                            <p className='font-normal text-base'>{date}</p>
+                                            <p className='font-normal text-base text-gray'>{sub}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                        <div className=" text-primary flex items-center space-x-4 w-[206px] rounded-lg px-5 py-2">
+                            <button className="font-bold text-base uppercase">Read All Blog</button>
+                            <FaArrowRightLong/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
