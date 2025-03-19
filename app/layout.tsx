@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/header";
-import Main from "./components/main";
-import Discusion from "./components/dicusion";
-import About from "./components/about";
-import Services from "./components/services";
-import Team from "./components/team";
-import Power from "./components/power";
-import Testimonials from "./components/testimonial";
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,18 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        style={{ backgroundColor: "white", }}>
-        <div className="container">
-          <Header />
-          <Main />
-          <Discusion />
-          <About />
-          <Services />
-          <Team />
-          <Power/>
-          <Testimonials/>
-        </div>
+      <body style={{ backgroundColor: "white", }}>
         {children}
       </body>
     </html>

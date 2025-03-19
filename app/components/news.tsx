@@ -2,6 +2,7 @@ import React from 'react'
 import img1 from '@/public/images/news/img1.png'
 import img2 from '@/public/images/news/img2.png'
 import Image from 'next/image'
+import { FaArrowRightLong } from 'react-icons/fa6'
 
 interface item {
     id: number,
@@ -40,7 +41,7 @@ const blogData: blog[] = [
     },
 ]
 
-const itemData: item[] = [    
+const itemData: item[] = [
     {
         id: 1,
         img: img1,
@@ -50,7 +51,7 @@ const itemData: item[] = [
         desc: 'Guru BK bersama wali kelas membersamai siswa terkait kelanjutan masalah yang sudah disampaikan melalui pesan di BK-MOCO'
     },
     {
-        id: 1,
+        id: 2,
         img: img2,
         sub: 'exercise',
         title: 'Layanan Walas',
@@ -59,47 +60,54 @@ const itemData: item[] = [
     }
 ]
 
-export function News () {
+export function News() {
     return (
-        <div className='pt-36 font-roboto'>
-            <div>
-                <div>
-                <h1></h1>
-                <h1></h1>
+        <div className='pt-12 font-roboto h-[3000px]'>
+            <div className='px-36 w-full'>
+                <div className='flex justify-between items-center pb-10'>
+                    <div className='w-full'>
+                        <h1 className='font-normal uppercase text-xl text-primary'>News & Press Release</h1>
+                        <h1 className='font-semibold text-black text-3xl leading-7'>Berita Terakhir</h1>
+                    </div>
+                    <div className="flex justify-center text-white items-center bg-primary space-x-4 p-3 w-[206px] rounded-lg">
+                        <button className="font-normal text-base">See All Blog</button>
+                        <FaArrowRightLong className="text-white " />
+                    </div>
                 </div>
-                <button>dfsf</button>
-            </div>
-            <div>
                 <div>
-                {
-                    itemData.map(({id, img, sub, title, date, desc}: item) => {
+                    <div className='flex items-center gap-x-8'>
+                        {
+                            itemData.map(({ id, img, sub, title, date, desc }: item) => {
+                                return (
+                                    <div className='space-y-3' key={id}>
+                                        <Image src={img} alt="Image" className='w-[351px] h-[234px]' />
+                                        <div className='text-left max-w-[337px]'>
+                                            <p className='font-normal text-base text-black'>{sub}</p>
+                                            <h1 className='font-semibold text-2xl text-black'>{title}</h1>
+                                            <p className='text-primary font-normal text-'>{date}</p>
+                                            <p className='font-normal text-base text-gray'>{desc}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                    <div>
+                        {/* {
+                    blogData.map(({ id, title, date, sub }: blog) => {
                         return (
                             <div key={id}>
+                                <h1>{title }</h1>
                                 <div>
-                                <Image src={img} alt="Image" className=''/>
-                                    <p>{sub}</p>
-                                    <h1>{title}</h1>
                                     <p>{date}</p>
-                                    <p>{desc}</p>
+                                    <p>{sub}</p>
                                 </div>
                             </div>
                         )
                     })
-                }
+                } */}
+                    </div>
                 </div>
-                {
-                    blogData.map(({id, title, date, sub}: blog) => {
-                        return (
-                            <div key={id}>
-                                <h1>{}</h1>
-                                <div>
-                                    <p>{}</p>
-                                    <p>{}</p>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
             </div>
         </div>
     )

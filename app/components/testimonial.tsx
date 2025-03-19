@@ -1,10 +1,7 @@
 import Image from "next/image"
-
-
 import petik from "@/public/images/Vector.png"
 import pria from "@/public/images/Testimonial/pria.png"
 import wanita from "@/public/images/Testimonial/wanita.png"
-
 interface data {
     id: number;
     img: any;
@@ -34,13 +31,11 @@ const testi: data[] = [
 ]
 
 
-
-
 export default function Testimonials() {
     return (
         <div className="pt-36">
             <div className="bg-abu w-full p-8 h-[453px] font-roboto">
-                <div className="flex">
+                <div className="flex mt-12">
                     <div className="px-36">
                         <h3 className="font-normal text-xl text-primary">TESTIMONIALS</h3>
                         <h1 className="font-semibold text-3xl text-background">Apa yang Mereka Katakan...</h1>
