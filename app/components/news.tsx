@@ -62,7 +62,7 @@ const itemData: item[] = [
 
 export function News() {
     return (
-        <div className='pt-12 font-roboto h-[3000px]'>
+        <div className='pt-12 font-roboto'>
             <div className='px-36 w-full'>
                 <div className='flex justify-between items-center pb-10'>
                     <div className='w-full'>

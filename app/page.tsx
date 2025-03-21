@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Header from "./components/header";
 import Main from "./components/main";
 import Discusion from "./components/dicusion";
 import About from "./components/about";
@@ -14,7 +13,6 @@ import { News } from "./components/news";
 const ComplaintPage: React.FC = () => {
   return (
     <div className="container">
-      <Header />
       <Main />
       <Discusion />
       <About />
