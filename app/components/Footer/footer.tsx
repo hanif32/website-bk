@@ -3,45 +3,84 @@
 import React from 'react'
 import Image from 'next/image'
 import logoFooter from "@/public/images/logo-footer.png"
-import { FaArrowRightLong } from 'react-icons/fa6'
+import { FaArrowRightLong, FaFacebook, FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa6'
+import { useState } from 'react'
+import { TiMediaEject } from "react-icons/ti";
+import { IoMdClose } from "react-icons/io";
+import Link from 'next/link'
+import { BsGithub } from 'react-icons/bs'
+
 
 const Footer = () => {
+  const [logo, setLogo] = useState(false);
+
+  const handleLogo = () => {
+    setLogo(!logo)
+  }
+
+
   return (
-    <footer className='font-roboto h-[1000px]'>
-      <div className='pt-36 px-36'>
-        <div className='flex items-center gap-x-3 border-b border-gray'>
+    <section className=' mt-36 py-24 bg-gradient-to-r from-[#D9D9D9] via-#D9D9D9 to-white h-[300px] rounded-t-full'>
+    <footer className='font-roboto max-w-7xl mx-auto h-[500px]'>
+        <div className='flex items-center gap-x-3 border-b border-[#C9C9C9] pb-4'>
           <Image src={logoFooter} alt='logo' />
           <div className='w-full'>
-            <div className='flex justify-between items-center border-b border-black/50'>
-              <h1>Believe Us As Counselor</h1>
-              <div className='flex items-center gap-x-5 font-normal text-lg text-gray'>
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
+            <div className='flex justify-between items-center'>
+              <h1 className='font-semibold text-2xl text-black'>Believe Us As Counselor</h1>
+              <div className='flex items-center gap-x-5 font-normal text-lg text-black'>
+                <Link href="#" className='hover:text-primary transition-all duration-300 ease-in-out'>Home</Link>
+                <Link href="#" className='hover:text-primary transition-all duration-300 ease-in-out'>Services</Link>
+                <Link href="#" className='hover:text-primary transition-all duration-300 ease-in-out'>About Us</Link>
+                <Link href="#" className='hover:text-primary transition-all duration-300 ease-in-out'>Contact</Link>
               </div>
             </div>
+            <div className='border-b-2 border-[#A5A5A5] my-4'>{''}</div>
             <div className='flex justify-between items-center'>
-              <div className=" bg-primary text-white flex items-center justify-center space-x-3 w-[150px] rounded-lg px-3 py-2">
+              <div className=" bg-primary text-white flex items-center justify-center space-x-4 rounded-lg px-8 py-2">
                 <button className="font-normal text-base">Join Now</button>
                 <FaArrowRightLong />
               </div>
-              <div className='flex items-center gap-x-5 font-normal text-lg text-black/20'>
-                <a href="#">Terms of use</a>
-                <a href="#">Privacy Police</a>
-                <a href="#">Cokkie Policy</a>
+              <div className='flex items-center gap-x-5 font-normal text-lg text-[#7D7D7D]'>
+                <Link href="#" className='hover:text-primary transition-all duration-300 ease-in-out'>Terms of use</Link>
+                <Link href="#" className='hover:text-primary transition-all duration-300 ease-in-out'>Privacy Police</Link>
+                <Link href="#" className='hover:text-primary transition-all duration-300 ease-in-out'>Cokkie Policy</Link>
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <p></p>
-          <div>
-            {/* icon */}
+        <div className='flex justify-between items-center py-4'>
+          <p className='text-sm font-normal text-black'>Copyright &copy; 2024 Malang, All rights reserved. Design Website By <span className='bg-gradient-to-r from-red-400 via-blue-400 to-purple-400 text-transparent bg-clip-text font-semibold'>Abim</span> <span className='text-primary'>&</span> <span className='bg-gradient-to-r from-red-400 via-blue-400 to-purple-400 text-transparent bg-clip-text font-semibold'>Hanif</span></p>
+          {/* icon */}
+          <div className='text-primary'>
+            <button onClick={handleLogo} className='text-xl'>
+              {logo ? <IoMdClose /> : <TiMediaEject className='rotate-180' />}
+            </button>
           </div>
         </div>
-      </div>
+        {logo && (
+          <div className='absolute bg-white shadow-lg shadow-black p-5 rounded-lg right-28'>
+            <h1 className='text-primary font-roboto font-semibold'>Lets Connect 🔗</h1>
+            <div className='gap-y-4 text-black'>
+              <h2 className='py-4 bg-gradient-to-r from-red-600 via-blue-400 to-purple-400 text-transparent bg-clip-text font-semibold'>Fanani Akbar Abimanyu</h2>
+              <div className='flex space-x-4'>
+                <Link href='https://github.com/Abimanyuoke' target='_blank'><BsGithub /></Link>
+                <Link href='https://www.instagram.com/fanani_abimanyu/' target='_blank'><FaInstagram /></Link>
+                <Link href='https://web.facebook.com/abim.manyu.3914207' target='_blank'><FaFacebookF /></Link>
+                <Link href='https://www.linkedin.com/in/fanani-akbar-abimanyu-978a03298/' target='_blank'><FaLinkedin /></Link>
+              </div>
+            </div>
+            <div className='gap-y-4 text-black'>
+              <h2 className='py-4 bg-gradient-to-r from-red-600 via-blue-400 to-purple-400 text-transparent bg-clip-text font-semibold '>Hanif Dzakwan Rabbani</h2>
+              <div className='flex space-x-4'>
+                <Link href=''><FaInstagram /></Link>
+                <Link href=''><FaFacebookF /></Link>
+                <Link href=''><FaLinkedin /></Link>
+              </div>
+            </div>
+          </div>
+        )}
     </footer>
+    </section>
   )
 }
 
