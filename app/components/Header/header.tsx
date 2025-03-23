@@ -1,5 +1,5 @@
 import Image from "next/image"; // Pastikan impor ini benar 
-import logo from "../../public/images/logo_bk.svg"
+import logo from "../../../public/images/logo_bk.svg"
 
 export default function Header() {
     return (

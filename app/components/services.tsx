@@ -14,7 +14,6 @@ interface data {
     sub: string;
     icon: ReactNode;
 }
-
 const services: data[] = [
     {
         id: 1,
@@ -47,8 +46,6 @@ const services: data[] = [
         icon: <BsArrowRightCircleFill />
     },
 ]
-
-
 
 export default function Services() {
     return (
