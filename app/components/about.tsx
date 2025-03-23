@@ -1,10 +1,10 @@
 import Image from "next/image"
-import foto from "@/public/images/Mask group.png"
+import foto from "@/public/logoNavbar.svg"
 import { FaCheckCircle } from "react-icons/fa"
 
 export default function About() {
     return (
-        <div className="pt-10 font-roboto">
+        <div className="pt-10 font-roboto" id="about">
             <div className="w-full bg-abu flex items-center h-[666px] p-10 space-x-8">
                 <div className="flex justify-center space-x-8">
                     <Image

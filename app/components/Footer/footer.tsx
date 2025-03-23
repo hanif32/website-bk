@@ -1,14 +1,14 @@
 "use client"
 
 import React from 'react'
-import Image from 'next/image'
-import logoFooter from "@/public/images/logo-footer.png"
-import { FaArrowRightLong, FaFacebook, FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa6'
 import { useState } from 'react'
+import Image from 'next/image'
+import logoFooter from "@/public/logoFooter.svg"
+import { FaArrowRightLong, FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa6'
 import { TiMediaEject } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
-import Link from 'next/link'
 import { BsGithub } from 'react-icons/bs'
+import Link from 'next/link'
 
 
 const Footer = () => {

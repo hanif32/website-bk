@@ -1,5 +1,6 @@
 import Image from "next/image"; // Pastikan impor ini benar 
 import logo from "../../../public/images/logo_bk.svg"
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -20,44 +21,44 @@ export default function Header() {
                 <nav className="w-full">
                     <ul className="flex items-center space-x-20 text-gray-700 font-medium py-4 pl-11 text-black">
                         <li>
-                            <a href="/" className="hover:text-red-500 transition-colors duration-300">
+                            <Link href="/" className="hover:text-red-500 transition-colors duration-300">
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/about" className="hover:text-red-500 transition-colors duration-300">
+                            <Link href="/about" className="hover:text-red-500 transition-colors duration-300">
                                 About Us
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/services" className="hover:text-red-500 transition-colors duration-300">
+                            <Link href="/services" className="hover:text-red-500 transition-colors duration-300">
                                 Services
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/therapists" className="hover:text-red-500 transition-colors duration-300">
+                            <Link href="/therapists" className="hover:text-red-500 transition-colors duration-300">
                                 Therapist Profile
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/testimonials" className="hover:text-red-500 transition-colors duration-300">
+                            <Link href="/testimonials" className="hover:text-red-500 transition-colors duration-300">
                                 Testimonials
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/blog" className="hover:text-red-500 transition-colors duration-300">
+                            <Link href="/blog" className="hover:text-red-500 transition-colors duration-300">
                                 Blog
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/contact" className="hover:text-red-500 transition-colors duration-300">
+                            <Link href="/contact" className="hover:text-red-500 transition-colors duration-300">
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/login" className="hover:text-red-500 transition-colors duration-300">
+                            <Link href="/login" className="hover:text-red-500 transition-colors duration-300">
                                 Login
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
