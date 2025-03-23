@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import logoFooter from "@/public/images/logo-footer.png"

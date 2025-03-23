@@ -12,14 +12,12 @@ interface item {
     date: string,
     desc: string
 }
-
 interface blog {
     id: number,
     title: string,
     date: string,
     sub: string
 }
-
 const blogData: blog[] = [
     {
         id: 1,
@@ -40,7 +38,6 @@ const blogData: blog[] = [
         sub: 'exercise'
     },
 ]
-
 const itemData: item[] = [
     {
         id: 1,
@@ -63,7 +60,7 @@ const itemData: item[] = [
 export function News() {
     return (
         <div className='pt-12 font-roboto'>
-            <div className='px-36 w-full'>
+            <div className='mx-auto max-w-7xl'>
                 <div className='flex justify-between items-center pb-10'>
                     <div className='w-full'>
                         <h1 className='font-normal uppercase text-xl text-primary'>News & Press Release</h1>

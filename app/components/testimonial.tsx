@@ -2,6 +2,7 @@ import Image from "next/image"
 import petik from "@/public/images/Vector.png"
 import pria from "@/public/images/Testimonial/pria.png"
 import wanita from "@/public/images/Testimonial/wanita.png"
+
 interface data {
     id: number;
     img: any;
@@ -10,7 +11,6 @@ interface data {
     value: string;
     alt: string;
 }
-
 const testi: data[] = [
     {
         id: 1,
@@ -29,7 +29,6 @@ const testi: data[] = [
         alt: "Gambar Wanita"
     },
 ]
-
 
 export default function Testimonials() {
     return (

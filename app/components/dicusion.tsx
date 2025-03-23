@@ -6,7 +6,6 @@ interface item {
     nomor: number;
     desc: string;
 }
-
 const data: item[] = [
     {
         id: 1,
@@ -28,11 +27,10 @@ const data: item[] = [
     },
 ]
 
-
 export default function Discusion() {
     return (
-        <div className="pt-48">
-            <div className="flex justify-center items-center w-full">
+        <div className="pt-[196px]">
+            <div className="flex justify-center">
                 <div className="flex justify-between items-center bg-white p-8 border rounded-md shadow-md space-x-4 w-4/5">
                     <div className="text-black space-y-2">
                         <h1 className="font-semibold text-3xl">Diskusikan Masalah Pada BK</h1>

@@ -5,14 +5,12 @@ import { TbMessageCancel } from "react-icons/tb";
 import img from "@/public/images/power.png"
 import Image from "next/image";
 
-
 interface data {
     id: number;
     icon: ReactNode;
     title: string;
     sub: string;
 }
-
 const icon: data[] = [
     {
         id: 1,
@@ -34,10 +32,9 @@ const icon: data[] = [
     },
 ]
 
-
 export default function Power() {
     return (
-        <div className="px-36 w-full font-roboto">
+        <div className="max-w-7xl mx-auto font-roboto">
             <div className="space-y-8 relative">
                 <div className="space-y-1">
                     <h2 className="font-normal text-xl text-primary">Focusing on you, with the best therapeutic care.</h2>
@@ -73,7 +70,7 @@ export default function Power() {
                 <Image
                     src={img}
                     alt="Gambar Konsuling"
-                    className="absolute -top-20 -right-[144px]" />
+                    className="absolute -top-20 -right-[120px]" />
             </div>
         </div>
     )

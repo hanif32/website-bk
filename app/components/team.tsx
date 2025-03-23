@@ -6,14 +6,12 @@ import bu_mis from "@/public/images/team/Bu_Mis.png"
 import bu_kheren from "@/public/images/team/Bu_Kheren.png"
 import { FaArrowRightLong } from "react-icons/fa6"
 
-
 interface data {
     id: number;
     img: any;
     title: string;
     sub: string;
 }
-
 const team: data[] = [
     {
         id: 1,
@@ -40,7 +38,6 @@ const team: data[] = [
         sub: "Sit nam urna lobortis cubilia feugiat sagittis letius. Netus dignissim pharetra facilisi "
     },
 ]
-
 
 export default function Team() {
     return (
