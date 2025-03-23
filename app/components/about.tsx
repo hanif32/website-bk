@@ -1,5 +1,5 @@
 import Image from "next/image"
-import foto from "@/public/logoNavbar.svg"
+import foto from "@/public/images/Mask group.png"
 import { FaCheckCircle } from "react-icons/fa"
 
 export default function About() {

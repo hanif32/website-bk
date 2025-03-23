@@ -29,7 +29,7 @@ const data: item[] = [
 
 export default function Discusion() {
     return (
-        <div className="pt-[196px]">
+        <div className="pt-[100px]">
             <div className="flex justify-center">
                 <div className="flex justify-between items-center bg-white p-8 border rounded-md shadow-md space-x-4 w-4/5">
                     <div className="text-black space-y-2">

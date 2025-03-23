@@ -13,7 +13,7 @@ export default function Main() {
                     <div className="bg-gradient-to-t from-black to-black/15 top-0 absolute w-full h-full">{""}</div>
                 </div>
             </div>
-            <div className="flex justify-start py-28 px-40">
+            <div className="flex justify-start py-[240px] px-40">
                 <div className="w-2/3">
                     <div className="font-bold text-4xl text-wrap">
                         <h1>Reclaim Your Happiness and Balance: “BK-Moco.com” 's Online Counseling for <br /> Positive Learning</h1>
