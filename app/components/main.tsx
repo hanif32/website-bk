@@ -15,7 +15,7 @@ export default function Main() {
             </div>
             <div className="flex justify-start py-[240px] px-40">
                 <div className="w-2/3">
-                    <div className="font-bold text-4xl text-wrap">
+                    <div className="font-bold lg:text-4xl text-wrap">
                         <h1>Reclaim Your Happiness and Balance: “BK-Moco.com” 's Online Counseling for <br /> Positive Learning</h1>
                         <p className="font-normal text-lg py-4">You're not alone on this journey. Our compassionate counselors are here to guide you.</p>
                         <div className="text-base font-normal flex justify-start items-center space-x-8">
