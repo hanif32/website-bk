@@ -20,6 +20,7 @@ export default {
       },
       container: {
         center: true,
+        padding: "16px"
       },
       fontFamily: {
         roboto: ["Roboto", "serif"]

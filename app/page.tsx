@@ -1,14 +1,14 @@
 "use client";
 
 import React from "react";
-import Main from "./components/main";
-import Discusion from "./components/dicusion";
-import About from "./components/about";
-import Services from "./components/services";
-import Team from "./components/team";
-import Power from "./components/power";
-import Testimonials from "./components/testimonial";
-import { News } from "./components/news";
+import Main from "./components/landingpage/main";
+import Discusion from "./components/landingpage/dicusion";
+import About from "./components/landingpage/about";
+import Services from "./components/landingpage/services";
+import Team from "./components/landingpage/team";
+import Power from "./components/landingpage/power";
+import Testimonials from "./components/landingpage/testimonial";
+import { News } from "./components/landingpage/news";
 
 const ComplaintPage: React.FC = () => {
   return (
