@@ -20,7 +20,7 @@ const Footer = () => {
 
 
   return (
-    <section className=' mt-36 py-24 bg-gradient-to-r from-[#D9D9D9] via-#D9D9D9 to-white h-[300px] rounded-t-full'>
+    <section className='mt-36 py-24 bg-gradient-to-r from-[#D9D9D9] via-#D9D9D9 to-white h-[300px] rounded-t-full'>
     <footer className='font-roboto max-w-7xl mx-auto h-[500px]'>
         <div className='flex items-center gap-x-3 border-b border-[#C9C9C9] pb-4'>
           <Image src={logoFooter} alt='logo' />

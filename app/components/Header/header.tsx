@@ -22,6 +22,7 @@ export default function Header() {
     }, []);
 
     return (
+        <div className="py-16 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
             <header className={`fixed top-0 left-0 w-full transition-all duration-300 text-black ${isScrolled ? "backdrop-blur-md bg-white/50 my-4 mx-6 md:mx-36 max-w-[90%] md:max-w-[80%] rounded-xl shadow-md z-[9999] p-2" : "backdrop-blur-sm bg-white/30 h-[80px]"}`}>
                 <div className="flex items-center justify-between px-6 w-full relative">
@@ -57,6 +58,7 @@ export default function Header() {
                     </nav>
                 </div>
             </header>
+        </div>
         </div>
     );
 }

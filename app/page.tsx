@@ -12,7 +12,7 @@ import { News } from "./components/landingpage/news";
 
 const ComplaintPage: React.FC = () => {
   return (
-    <div className="container overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <Main />
       <Discusion />
       <About />
@@ -20,7 +20,7 @@ const ComplaintPage: React.FC = () => {
       <Team />
       <Power />
       <Testimonials />
-      <News/>
+      <News />
     </div>
   );
 };
