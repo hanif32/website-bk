@@ -22,7 +22,7 @@ export default function Header() {
     }, []);
 
     return (
-        <div className="py-16 px-6 bg-white">
+        <div className="py-10 px-6 z-[9999]">
         <div className="max-w-7xl mx-auto">
             <header className={`fixed top-0 left-0 w-full transition-all duration-300 text-black ${isScrolled ? "backdrop-blur-md bg-white/50 my-4 mx-6 md:mx-36 max-w-[90%] md:max-w-[80%] rounded-xl shadow-md z-[9999] p-2" : "backdrop-blur-sm bg-white/30 h-[80px]"}`}>
                 <div className="flex items-center justify-between px-6 w-full relative">
@@ -36,7 +36,7 @@ export default function Header() {
                     </button>
 
                     {/* Navigation */}
-                    <nav className={`absolute lg:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${menuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-10 text-gray-700 font-medium p-4 lg:p-0`}>
+                    <nav className={`absolute lg:relative top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${menuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-10 text-gray-700 font-medium p-4 lg:p-0`}>
                         <ul className="flex flex-col lg:flex-row lg:space-x-10 space-y-4 lg:space-y-0">
                             {[
                                 { href: "/", label: "Home" },
