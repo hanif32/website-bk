@@ -14,13 +14,13 @@ const ComplaintPage: React.FC = () => {
   return (
     <div className="overflow-x-hidden">
       <Main />
-      <Discusion />
+      {/* <Discusion />
       <About />
       <Services />
       <Team />
       <Power />
       <Testimonials />
-      <News />
+      <News /> */}
     </div>
   );
 };

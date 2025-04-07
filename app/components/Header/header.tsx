@@ -31,13 +31,13 @@ export default function Header() {
                     </div>
                     
                     {/* Mobile Menu Button */}
-                    <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl md:hidden focus:outline-none">
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl lg:hidden focus:outline-none">
                         {menuOpen ? <FaTimes /> : <FaBars />}
                     </button>
 
                     {/* Navigation */}
-                    <nav className={`absolute md:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${menuOpen ? "block" : "hidden"} md:flex md:items-center md:space-x-10 text-gray-700 font-medium p-4 md:p-0`}>
-                        <ul className="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0">
+                    <nav className={`absolute lg:relative top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${menuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-10 text-gray-700 font-medium p-4 lg:p-0`}>
+                        <ul className="flex flex-col lg:flex-row lg:space-x-10 space-y-4 lg:space-y-0">
                             {[
                                 { href: "/", label: "Home" },
                                 { href: "/about", label: "About Us" },
