@@ -30,7 +30,7 @@ const data: item[] = [
 
 export default function Discusion() {
     return (
-        <div className="py-16 mx-6 bg-white font-roboto relative">
+        <div className="py-16 mx-6 bg-white font-roboto relative -z-10 h-[700px] lg:h-[380px]">
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-center">
                 <div className="absolute -top-5 lg:top-10">

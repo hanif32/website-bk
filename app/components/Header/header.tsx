@@ -36,7 +36,7 @@ export default function Header() {
                     </button>
 
                     {/* Navigation */}
-                    <nav className={`absolute lg:relative top-full left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${menuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-10 text-gray-700 font-medium p-4 lg:p-0`}>
+                    <nav className={`absolute lg:relative top-full translate-y-2 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${menuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-10 text-gray-700 font-medium p-4 lg:p-0`}>
                         <ul className="flex flex-col lg:flex-row lg:space-x-10 space-y-4 lg:space-y-0">
                             {[
                                 { href: "/", label: "Home" },
