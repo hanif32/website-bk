@@ -41,43 +41,45 @@ const team: data[] = [
 
 export default function Team() {
     return (
-        <div className="pt-24 font-roboto">
-            <div className="flex justify-start items-center px-36 ">
-                <div className="space-y-2">
-                    <h2 className="font-normal text-xl text-primary">Our Team</h2>
-                    <h1 className="font-semibold text-3xl text-black">Profil Guru BK SMK Telkom Malang</h1>
-                    <p className="text-gray font-normal text-lg w-[615px]">Tidak masalah kalian memilika masalah di sekolah, asalkan punya tempat cerita yang terpercaya</p>
-                </div>
+        <div className="py-16 px-6 bg-white font-roboto">
+            <div className="max-w-7xl mx-auto">
+                    <div className="flex justify-start items-center">
+                        <div className="space-y-2">
+                            <h2 className="font-normal text-xl text-primary">Our Team</h2>
+                            <h1 className="font-semibold text-3xl text-black">Profil Guru BK SMK Telkom Malang</h1>
+                            <p className="text-gray font-normal text-lg w-[615px]">Tidak masalah kalian memilika masalah di sekolah, asalkan punya tempat cerita yang terpercaya</p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-8 gap-6 lg:gap-14 place-items-center lg:place-items-start">
+                        {
+                            team.map((items) => {
+                                return (
+                                    <div key={items.id} className="relative">
+                                        <Image
+                                            src={items.img}
+                                            width={269}
+                                            height={354}
+                                            alt="gambar guru BK"
+                                            className="rounded-lg" />
+                                        <div className="absolute bg-gradient-to-t from-black to-transparent rounded-lg w-[269px] h-[354px] top-0"></div>
+                                        <div className="text-white space-y-3 absolute bottom-3 px-4">
+                                            <h1 className="font-bold text-2xl">{items.title}</h1>
+                                            <div className="border-1 border-white/35 w-[235px] -rotate-180">{''}</div>
+                                            <p className="font-normal text-xs  w-[235px]">{items.sub}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                    <div className="pb-12">
+                        <div className="flex justify-start text-white items-center bg-primary space-x-4 p-3 w-[206px] rounded-lg">
+                            <button className="font-normal text-base">Meet All Counsellor</button>
+                            <FaArrowRightLong className="text-white " />
+                        </div>
+                    </div>
+                    <div className="border-b-2 border-black/20 w-full -rotate-180 py-7">{''}</div>
+                </div >
             </div>
-            <div className="flex justify-center items-center px-36 py-8 gap-14">
-                {
-                    team.map((items) => {
-                        return (
-                            <div key={items.id} className="relative">
-                                <Image
-                                    src={items.img}
-                                    width={269}
-                                    height={354}
-                                    alt="gambar guru BK"
-                                    className="rounded-lg" />
-                                <div className="absolute bg-gradient-to-t from-black to-transparent rounded-lg w-[269px] h-[354px] top-0"></div>
-                                <div className="text-white space-y-3 absolute bottom-3 px-4">
-                                    <h1 className="font-bold text-2xl">{items.title}</h1>
-                                    <div className="border-1 border-white/35 w-[235px] -rotate-180">{''}</div>
-                                    <p className="font-normal text-xs  w-[235px]">{items.sub}</p>
-                                </div>
-                            </div>
-                        )
-                    })
-                }
-            </div>
-            <div className="px-36 pb-12">
-                <div className="flex justify-center text-white items-center bg-primary space-x-4 p-3 w-[206px] rounded-lg">
-                    <button className="font-normal text-base">Meet All Counsellor</button>
-                    <FaArrowRightLong className="text-white " />
-                </div>
-            </div>
-            <div className="border-b-2 border-black/20 w-full -rotate-180 py-7">{''}</div>
-        </div >
     )
 }
