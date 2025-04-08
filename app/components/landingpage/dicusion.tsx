@@ -30,20 +30,21 @@ const data: item[] = [
 
 export default function Discusion() {
     return (
-        <div className="py-16 px-6 bg-white font-roboto relative h-[1000px]">
+        <div className="py-16 mx-6 bg-white font-roboto relative h-[1000px]">
             <div className="max-w-7xl mx-auto">
-                <div className="absolute -top-5">
-                    <div className="bg-white shadow-xl p-5 rounded-md">
+                <div className="flex justify-center">
+                <div className="absolute -top-5 lg:top-10">
+                    <div className="bg-white shadow-xl p-5 rounded-md md:flex md:justify-between md:items-center lg:w-[1170px]">
                         <div className="text-black space-y-3">
                             <h1 className="font-semibold text-2xl">Diskusikan Masalah Pada BK</h1>
-                            <p className="font-normal text-sm">Tim BK SMK Telkom Malang siap berdiskusi terkait masalah akademik, sosial, atau pribadi semua siswa</p>
+                            <p className="font-normal text-sm md:text-xs md:w-[500px]">Tim BK SMK Telkom Malang siap berdiskusi terkait masalah akademik, sosial, atau pribadi semua siswa</p>
                         </div>
-                        <div className="bg-primary py-2 px-4 rounded-md w-36 flex justify-center items-center space-x-4 mt-4">
-                            <button>Diskusikan</button>
+                        <button className="bg-primary py-2 px-4 rounded-md w-36 flex justify-center items-center space-x-4 mt-4">
+                            <h1 className="text-sm">Diskusikan</h1>
                             <FaArrowRightLong />
-                        </div>
+                        </button>
                     </div>
-                    <div className="space-y-4 mt-10">
+                    <div className="space-y-4 lg:space-y-0 mt-10 lg:grid lg:grid-cols-3 lg:gap-x-3">
                         {
                             data.map((datas) => {
                                 return (
@@ -60,6 +61,7 @@ export default function Discusion() {
                             })
                         }
                     </div>
+                </div>
                 </div>
             </div>
         </div>
