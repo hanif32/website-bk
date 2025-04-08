@@ -12,7 +12,7 @@ import { News } from "./components/landingpage/news";
 
 const ComplaintPage: React.FC = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div>
       <Main />
       <Discusion />
       <About />

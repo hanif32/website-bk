@@ -19,4 +19,6 @@ body {
   background: var(--background);
   /* globals.css */
   background-color: white;
+    overflow-x: hidden;
+  
 }
