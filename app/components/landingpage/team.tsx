@@ -45,9 +45,9 @@ export default function Team() {
             <div className="max-w-7xl mx-auto">
                     <div className="flex justify-start items-center">
                         <div className="space-y-2">
-                            <h2 className="font-normal text-xl text-primary">Our Team</h2>
-                            <h1 className="font-semibold text-3xl text-black">Profil Guru BK SMK Telkom Malang</h1>
-                            <p className="text-gray font-normal text-lg w-[615px]">Tidak masalah kalian memilika masalah di sekolah, asalkan punya tempat cerita yang terpercaya</p>
+                            <h2 className="font-normal text-lg lg:text-xl text-primary">Our Team</h2>
+                            <h1 className="font-semibold text-xl md:text-3xl text-black">Profil Guru BK SMK Telkom Malang</h1>
+                            <p className="text-gray font-normal lg:text-lg  lg:w-[615px]">Tidak masalah kalian memiliki masalah di sekolah, asalkan punya tempat cerita yang terpercaya</p>
                         </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-8 gap-6 lg:gap-14 place-items-center lg:place-items-start">
@@ -72,8 +72,8 @@ export default function Team() {
                             })
                         }
                     </div>
-                    <div className="pb-12">
-                        <div className="flex justify-start text-white items-center bg-primary space-x-4 p-3 w-[206px] rounded-lg">
+                    <div className="pb-12 lg:block flex justify-center">
+                        <div className="flex justify-center lg:justify-start text-white items-center bg-primary space-x-4 p-3 w-[206px] rounded-lg">
                             <button className="font-normal text-base">Meet All Counsellor</button>
                             <FaArrowRightLong className="text-white " />
                         </div>
