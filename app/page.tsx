@@ -15,8 +15,8 @@ const ComplaintPage: React.FC = () => {
     <div className="overflow-x-hidden">
       <Main />
       <Discusion />
-      {/* <About />
-      <Services />
+      <About />
+      {/* <Services />
       <Team />
       <Power />
       <Testimonials />
