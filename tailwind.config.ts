@@ -15,13 +15,6 @@ export default {
         secondary: "#E4262C",
         gray: "rgba(69, 69, 69, 1)"
       },
-      borderWidth: {
-        1: "1px"
-      },
-      container: {
-        center: true,
-        padding: "16px"
-      },
       fontFamily: {
         roboto: ["Roboto", "serif"]
       },
