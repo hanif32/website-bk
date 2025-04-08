@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa"
 
 export default function About() {
     return (
-        <div className="relative -z-10">
+        <div className="relative -z-10 h-[800px]">
             <div className="py-16 px-6 bg-abu font-roboto absolute inset-0 h-[680px]">
                 <div className="max-w-7xl mx-auto">
                     <div className="flex justify-between gap-x-3 relative">
@@ -28,7 +28,7 @@ export default function About() {
                                     <p className="font-normal text-[13px] md:text-base text-gray">Kunjungan ke Rumah dan Undangan ke Sekolah</p>
                                 </div>
                             </div>
-                            <div className="bg-primary rounded-3xl -translate-x-2 p-8 text-center lg:text-left lg:flex lg:justify-center lg:items-center lg:absolute w-[330px] md:w-full lg:w-[700px] lg:-left-36 lg:-translate-x-20">
+                            <div className="bg-primary rounded-3xl -translate-x-2 p-8 text-center md:text-left lg:flex lg:justify-center lg:items-center lg:absolute w-[330px] md:w-full lg:w-[700px] lg:-left-36 lg:-translate-x-20">
                                 <div className="flex justify-center md:block lg:border-r-2 lg:border-white lg:mr-8">
                                     <div className="text-white space-y-3">
                                     <h1 className="font-semibold text-base">Misi</h1>

@@ -16,8 +16,8 @@ const ComplaintPage: React.FC = () => {
       <Main />
       <Discusion />
       <About />
-      {/* <Services />
-      <Team />
+      <Services />
+      {/* <Team />
       <Power />
       <Testimonials />
       <News /> */}
