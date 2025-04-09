@@ -61,20 +61,20 @@ const itemData: item[] = [
 
 export function News() {
     return (
-        <div className='pt-12 font-roboto'>
+        <div className='py-16 px-6 font-roboto bg-white'>
             <div className='mx-auto max-w-7xl'>
-                <div className='flex justify-between items-center pb-10'>
-                    <div className='w-full'>
-                        <h1 className='font-normal uppercase text-xl text-primary'>News & Press Release</h1>
-                        <h1 className='font-semibold text-black text-3xl leading-7'>Berita Terakhir</h1>
+                <div className='md:flex md:justify-between items-center py-5 space-y-5 md:space-y-0 md:pb-10'>
+                    <div>
+                        <h1 className='font-normal uppercase text-sm md:text-xl text-primary'>News & Press Release</h1>
+                        <h1 className='font-semibold text-black text-2xl md:text-3xl leading-7'>Berita Terakhir</h1>
                     </div>
                     <div className="flex justify-center text-white items-center bg-primary space-x-4 py-2 w-[206px] rounded-lg">
                         <button className="font-normal text-base">See All Blog</button>
                         <FaArrowRightLong className="text-white " />
                     </div>
                 </div>
-                <div className='flex items-start gap-x-[100px]'>
-                    <div className='flex items-center gap-x-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-start space-y-10 md:space-y-0 gap-3 md:gap-10 lg:gap-x-10'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
                         {
                             itemData.map(({ id, img, sub, title, date, desc }: item) => {
                                 return (
@@ -82,21 +82,21 @@ export function News() {
                                         <Image src={img} alt="Image" className='w-[351px] h-[234px]' />
                                         <div className='text-left max-w-[337px]'>
                                             <p className='font-normal text-base text-black'>{sub}</p>
-                                            <h1 className='font-semibold text-2xl text-black'>{title}</h1>
+                                            <h1 className='font-semibold text-xl md:text-2xl text-black'>{title}</h1>
                                             <p className='text-primary font-normal text-'>{date}</p>
-                                            <p className='font-normal text-base text-gray'>{desc}</p>
+                                            <p className='font-normal text-sm md:text-base text-gray'>{desc}</p>
                                         </div>
                                     </div>
                                 )
                             })
                         }
                     </div>
-                    <div className='border border-gray/25 rounded-md max-h-[400px]'>
+                    <div className='border border-gray/25 rounded-md max-h-[400px] overflow-y-scroll'>
                         {
                             blogData.map(({ id, title, date, sub }: blog) => {
                                 return (
-                                    <div key={id} className='text-black border-b-gray/25 border-b-1 max-w-[400px] space-y-1 py-3 px-6'>
-                                        <h1 className='font-semibold text-2xl'>{title}</h1>
+                                    <div key={id} className='text-black border-b-gray/25 border-b max-w-[400px] space-y-1 py-3 px-6'>
+                                        <h1 className='font-semibold text-xl  md:text-2xl'>{title}</h1>
                                         <div className='flex items-center justify-start space-x-2'>
                                             <p className='font-normal text-base'>{date}</p>
                                             <p className='font-normal text-base text-gray'>{sub}</p>

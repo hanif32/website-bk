@@ -38,7 +38,7 @@ export default function Testimonials() {
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-3">
                         <div>
-                        <h3 className="font-normal text-lg md:text-xl text-primary">TESTIMONIALS</h3>
+                        <h3 className="font-normal text-base md:text-xl text-primary">TESTIMONIALS</h3>
                         <h1 className="font-semibold text-3xl text-black text-background">Apa yang Mereka Katakan...</h1>
                         <p className="font-normal text-base text-gray w-[268px]">Testimoni dari siswa terkait curhatan bersama BK</p>
                         </div>
