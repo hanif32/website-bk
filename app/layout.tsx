@@ -19,7 +19,7 @@ export default function RootLayout({
       <body style={{ backgroundColor: "white", }}>
         <Header/>
         {children}
-        {/* <Footer/> */}
+        <Footer/>
       </body>
     </html>
   );

@@ -73,7 +73,7 @@ export function News() {
                         <FaArrowRightLong className="text-white " />
                     </div>
                 </div>
-                <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-start space-y-10 md:space-y-0 gap-3 md:gap-10 lg:gap-x-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-start space-y-10 md:space-y-0 gap-3 md:gap-5'>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
                         {
                             itemData.map(({ id, img, sub, title, date, desc }: item) => {
