@@ -3,7 +3,7 @@ import smk from "../../../public/images/sekolah.png"
 
 export default function Main() {
     return (
-        <div className="relative w-full h-[640px] overflow-hidden -z-10">
+        <div className="relative w-full h-[680px] overflow-hidden -z-10">
             <div className="absolute inset-0 -z-10">
                 <Image
                     src={smk}
