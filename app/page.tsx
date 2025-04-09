@@ -1,4 +1,4 @@
-"use client";
+
 
 import React from "react";
 import Main from "./components/landingpage/main";
@@ -20,7 +20,7 @@ const ComplaintPage: React.FC = () => {
       <Team />
       <Power />
       <Testimonials />
-      {/* <News /> */}
+      <News />
     </div>
   );
 };

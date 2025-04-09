@@ -1,5 +1,6 @@
-import Image from "next/image"
+"use client"
 
+import Image from "next/image"
 import pak_emil from "@/public/images/team/Pak_Emil.png"
 import bu_nia from "@/public/images/team/Bu_Nia.png"
 import bu_mis from "@/public/images/team/Bu_Mis.png"

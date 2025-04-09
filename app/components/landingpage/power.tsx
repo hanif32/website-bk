@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactNode } from "react";
 import { GrCertificate } from "react-icons/gr";
 import { IoDiamondOutline } from "react-icons/io5";
@@ -69,8 +71,8 @@ export default function Power() {
                             }
                         </div>
                     </div>
-                        <div className="pb-12 lg:block flex justify-center">
-                            <div className="flex justify-center lg:justify-start text-white items-center bg-primary space-x-4 p-3 w-[150px] rounded-lg">
+                        <div className="pb-12 lg:block flex justify-center md:justify-start">
+                            <div className="flex justify-center text-white items-center bg-primary space-x-4 p-3 w-[150px] rounded-lg">
                                 <button className="font-normal text-base">Consultation</button>
                                 <FaArrowRightLong className="text-white " />
                             </div>

@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import img1 from '@/public/images/news/img1.png'
 import img2 from '@/public/images/news/img2.png'

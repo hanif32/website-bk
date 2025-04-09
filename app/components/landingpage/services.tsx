@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactNode } from "react";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import image_1 from "@/public/images/services/img1.png"
@@ -53,7 +55,7 @@ export default function Services() {
             <div className="max-w-7xl mx-auto">
                     <div className="flex justify-center items-center">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
-                            <div className="bg-primary h-[220px] rounded-lg px-8 pt-4">
+                            <div className="bg-primary h-[250px] lg:h-[232px] rounded-lg px-8 pt-4">
                                 <div className="text-white space-y-4">
                                     <h3 className="font-normal text-xl">Our Services</h3>
                                     <h1 className="font-bold text-2xl pb-4">Get treatment for all your mental healthcare needs.</h1>
@@ -75,7 +77,7 @@ export default function Services() {
                                                 className="rounded-lg" />
                                             <div className="flex justify-center items-center">
                                                 <div className="absolute flex items-center bg-white rounded-lg shadow-md pr-12 p-4">
-                                                    <h1 className="font-normal text-xl text-black">{sub}</h1>
+                                                    <h1 className="font-normal text-base lg:text-xl text-black">{sub}</h1>
                                                     <span className="text-secondary border-2 border-white rounded-full text-4xl bg-white absolute -right-2">{icon}</span>
                                                 </div>
                                             </div>
