@@ -24,7 +24,7 @@ const Footer = () => {
   };
 
   if (!hasMounted) return null; 
-  
+
   return (
     <section className='py-16 px-6 mt-24 bg-gradient-to-r from-[#D9D9D9] via-#D9D9D9 to-white h-[300px] rounded-t-full font-roboto relative '>
       <footer className='max-w-7xl mx-auto '>
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         {logos && (
-          <div className='fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center'>
+          <div className='fixed inset-0 z-[9999] bg-black/60 backdrop-blur-sm flex items-center justify-center'>
             <div className='relative bg-white shadow-lg p-6 rounded-xl w-[90%] max-w-xl'>
               <button onClick={handleLogos} className='absolute top-4 right-4 text-2xl text-black hover:text-primary'>
                 <IoMdClose />
