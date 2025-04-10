@@ -79,7 +79,7 @@ export function News() {
                             itemData.map(({ id, img, sub, title, date, desc }: item) => {
                                 return (
                                     <div className='space-y-3' key={id}>
-                                        <Image src={img} alt="Image" className='w-[351px] h-[234px]' />
+                                        <Image src={img} alt="Image" width={351} height={234} />
                                         <div className='text-left max-w-[337px]'>
                                             <p className='font-normal text-base text-black'>{sub}</p>
                                             <h1 className='font-semibold text-xl md:text-2xl text-black'>{title}</h1>
