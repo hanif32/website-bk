@@ -33,8 +33,8 @@ const testi: data[] = [
 
 export default function Testimonials() {
     return (
-        <div className="relative -z-10 h-[1000px] md:h-[600px] lg:h-[500px]">
-            <div className="py-16 px-6 bg-abu font-roboto absolute inset-0 lg:h-[500px]">
+        <div className="relative -z-10 h-[1000px] bg-abu md:h-[600px] lg:h-[500px]" id="testimonials">
+            <div className="py-16 px-6  font-roboto absolute inset-0 ">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-3">
                         <div>

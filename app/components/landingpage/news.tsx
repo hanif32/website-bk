@@ -61,7 +61,7 @@ const itemData: item[] = [
 
 export function News() {
     return (
-        <div className='py-16 px-6 font-roboto bg-white'>
+        <div className='py-16 px-6 font-roboto bg-white' id='blog'>
             <div className='mx-auto max-w-7xl'>
                 <div className='md:flex md:justify-between items-center py-5 space-y-5 md:space-y-0 md:pb-10'>
                     <div>
@@ -73,8 +73,8 @@ export function News() {
                         <FaArrowRightLong className="text-white " />
                     </div>
                 </div>
-                <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-start space-y-10 md:space-y-0 gap-3 md:gap-5'>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-start space-y-10 md:space-y-0 space-x-0 lg:space-x-11 md:gap-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-10 w-auto '>
                         {
                             itemData.map(({ id, img, sub, title, date, desc }: item) => {
                                 return (
@@ -91,7 +91,7 @@ export function News() {
                             })
                         }
                     </div>
-                    <div className='border border-gray/25 rounded-md max-h-[400px] overflow-y-scroll'>
+                    <div className='border border-gray/25 rounded-md max-h-[400px] overflow-y-scroll lg:overflow-y-hidden'>
                         {
                             blogData.map(({ id, title, date, sub }: blog) => {
                                 return (

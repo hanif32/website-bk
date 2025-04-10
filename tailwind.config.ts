@@ -20,7 +20,19 @@ export default {
       },
       backgroundColor: {
         abu: "rgba(136, 137, 136, 0.2)"
-      }
+      },
+      backgroundSize: {
+        '200%': '200% 200%',
+      },
+      animation: {
+        'gradient-move': 'gradientMove 3s ease infinite',
+      },
+      keyframes: {
+        gradientMove: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
+      },
     },
   },
   plugins: [],
