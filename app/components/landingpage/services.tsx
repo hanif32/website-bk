@@ -55,7 +55,7 @@ export default function Services() {
             <div className="max-w-7xl mx-auto">
                     <div className="flex justify-center items-center">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
-                            <div className="bg-primary h-[250px] lg:h-[232px] rounded-lg px-8 pt-4">
+                            <div className="bg-primary h-[250px] lg:h-[232px] lg:w-[370px] rounded-lg px-8 pt-4">
                                 <div className="text-white space-y-4">
                                     <h3 className="font-normal text-xl">Our Services</h3>
                                     <h1 className="font-bold text-2xl pb-4">Get treatment for all your mental healthcare needs.</h1>

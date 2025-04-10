@@ -11,15 +11,21 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
+        let hasMounted = false;
+
         const handleScroll = () => {
+            if (!hasMounted) return;
             setIsScrolled(window.scrollY > 200);
         };
 
+        hasMounted = true;
         window.addEventListener("scroll", handleScroll);
+
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
 
     return (
         <div className="py-10 px-6 z-[9999]">
@@ -36,26 +42,26 @@ export default function Header() {
                         </button>
 
                         {/* Navigation */}
-                            <nav className={`absolute lg:relative top-full lg:translate-y-0 translate-y-2 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${menuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-10 text-gray-700 font-medium p-4 lg:p-0`}>
-                                <ul className="flex flex-col lg:flex-row lg:space-x-3 space-y-4 lg:space-y-0">
-                                    {[
-                                        { href: "/#", label: "Home" },
-                                        { href: "/#about", label: "About Us" },
-                                        { href: "/#services", label: "Services" },
-                                        { href: "/#therapists", label: "Therapist Profile" },
-                                        { href: "/#testimonials", label: "Testimonials" },
-                                        { href: "/#blog", label: "Blog" },
-                                        { href: "/#contact", label: "Contact" },
-                                        { href: "/#login", label: "Login" }
-                                    ].map((item, index) => (
-                                        <li key={index}>
-                                            <Link href={item.href} className="hover:text-red-500 transition-colors duration-300 block py-2 px-4">
-                                                {item.label}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </nav>
+                        <nav className={`absolute lg:relative top-full lg:translate-y-0 translate-y-2 left-0 w-full lg:w-auto bg-white lg:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${menuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:space-x-10 text-gray-700 font-medium p-4 lg:p-0`}>
+                            <ul className="flex flex-col lg:flex-row lg:space-x-3 space-y-4 lg:space-y-0">
+                                {[
+                                    { href: "/#", label: "Home" },
+                                    { href: "/#about", label: "About Us" },
+                                    { href: "/#services", label: "Services" },
+                                    { href: "/#therapists", label: "Therapist Profile" },
+                                    { href: "/#testimonials", label: "Testimonials" },
+                                    { href: "/#blog", label: "Blog" },
+                                    { href: "/#contact", label: "Contact" },
+                                    { href: "/#login", label: "Login" }
+                                ].map((item, index) => (
+                                    <li key={index}>
+                                        <Link href={item.href} className="hover:text-red-500 transition-colors duration-300 block py-2 px-4">
+                                            {item.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
                     </div>
                 </header>
             </div>

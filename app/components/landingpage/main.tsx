@@ -1,7 +1,18 @@
+"use client"
+
 import Image from "next/image"
 import smk from "../../../public/images/sekolah.png"
+import { useEffect, useState } from "react";
 
 export default function Main() {
+    const [hasMounted, setHasMounted] = useState(false);
+
+    useEffect(() => {
+        setHasMounted(true);
+    }, []);
+
+    if (!hasMounted) return null;
+    
     return (
         <div className="relative w-full h-[670px] overflow-hidden -z-10">
             <div className="absolute inset-0 -z-10">

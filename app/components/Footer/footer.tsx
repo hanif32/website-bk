@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import logoFooter from "@/public/logoFooter.svg"
 import { FaArrowRightLong, FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa6'
@@ -13,15 +13,23 @@ import { BsGithub } from 'react-icons/bs'
 
 const Footer = () => {
   const [logos, setLogos] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   const handleLogos = () => {
-    setLogos(!logos)
-  }
+    setLogos(!logos);
+  };
+
+  if (!hasMounted) return null; 
+  
   return (
     <section className='py-16 px-6 mt-24 bg-gradient-to-r from-[#D9D9D9] via-#D9D9D9 to-white h-[300px] rounded-t-full font-roboto relative '>
       <footer className='max-w-7xl mx-auto '>
         <div className='flex items gap-x-3 border-b border-[#C9C9C9] pb-4'>
-          <Image src={logoFooter} alt='logo' className='hidden md:block '/>
+          <Image src={logoFooter} alt='logo' className='hidden md:block ' />
           <div className='w-full'>
             <div className='md:flex justify-between items-center'>
               <h1 className='font-semibold md:text-lg lg:text-xl text-black'>Believe Us As Counselor</h1>
